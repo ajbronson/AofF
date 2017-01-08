@@ -47,6 +47,16 @@ class FileController {
         })
     }
     
+    func volumeNameForID(id: Int) -> String {
+        return try! dbQueue.inDatabase({ (db: Database) -> String in
+            var name: String = ""
+            for row in try Row.fetchAll(db, "select * from canon where id = \(id)") {
+                name = row.value(named: "name")
+            }
+            return name
+        })
+    }
+    
     func book(volumeID: Int) -> [Book] {
         return try! dbQueue.inDatabase({ (db: Database) -> [Book] in
             var books: [Book] = []

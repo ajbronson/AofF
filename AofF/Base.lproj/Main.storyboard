@@ -14,17 +14,17 @@
         <!--Help-->
         <scene sceneID="6CS-tI-m4i">
             <objects>
-                <tableViewController id="0Ge-DG-FbT" customClass="HelpTableViewController" customModule="AofF" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="helpVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0Ge-DG-FbT" customClass="HelpTableViewController" customModule="AofF" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="mAa-EU-Xmr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <color key="separatorColor" red="0.72298090159999995" green="0.91797962860000004" blue="0.73182746590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="separatorColor" red="0.86365655640000005" green="0.61100430459999999" blue="0.60539956920000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <sections>
                             <tableViewSection headerTitle="Feedback" id="rrQ-K4-nPO">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="71" id="zVI-4r-zU1">
-                                        <rect key="frame" x="0.0" y="56" width="375" height="71"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="71"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zVI-4r-zU1" id="gVK-zU-xbB">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="70.5"/>
@@ -47,7 +47,7 @@
                                         <inset key="separatorInset" minX="45" minY="0.0" maxX="45" maxY="0.0"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="63" id="0Uk-u6-YUB">
-                                        <rect key="frame" x="0.0" y="127" width="375" height="63"/>
+                                        <rect key="frame" x="0.0" y="126.5" width="375" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Uk-u6-YUB" id="1v2-a4-A0j">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="62.5"/>
@@ -73,7 +73,7 @@
                             <tableViewSection headerTitle="Font Size" id="Q6E-uu-2MP">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="73" id="1vp-7m-mrr">
-                                        <rect key="frame" x="0.0" y="247" width="375" height="73"/>
+                                        <rect key="frame" x="0.0" y="245.5" width="375" height="73"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1vp-7m-mrr" id="Vpk-aX-GID">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="72.5"/>
@@ -116,7 +116,7 @@
                             <tableViewSection headerTitle="Hints" id="Y7o-oY-JOv">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="helpCell" rowHeight="194" id="BFO-Ai-vv5">
-                                        <rect key="frame" x="0.0" y="377" width="375" height="194"/>
+                                        <rect key="frame" x="0.0" y="374.5" width="375" height="194"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="BFO-Ai-vv5" id="Kgw-ph-iCK">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="193.5"/>
@@ -166,7 +166,7 @@
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bh6-3l-rKr">
                                                     <rect key="frame" x="8" y="53" width="359" height="133"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <string key="text">Stars can be used for whatever you would like.  Tagging a scripture with a Blue Star could mean you want to review it weekly.  A yellow star could mean you don't have the scripture memorized, and want it to be in a "to do" list. The white star is the default, signaling no selection.  Use the stars for whatever helps you the most.</string>
+                                                    <string key="text">Stars can be used for whatever you would like.  Tagging an item with a Blue Star could mean you want to review it weekly.  A yellow star could mean you don't have the item memorized, and want it to be in a "to do" list. The white star is the default, signaling no selection.  Use the stars for whatever helps you the most.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
@@ -183,7 +183,7 @@
                                         <inset key="separatorInset" minX="50" minY="0.0" maxX="50" maxY="0.0"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="helpCell" rowHeight="171" id="jt3-QY-Ved">
-                                        <rect key="frame" x="0.0" y="571" width="375" height="171"/>
+                                        <rect key="frame" x="0.0" y="568.5" width="375" height="171"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jt3-QY-Ved" id="Qeu-FW-ERG">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="170.5"/>
@@ -192,7 +192,7 @@
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZg-8X-qSF">
                                                     <rect key="frame" x="8" y="8" width="359" height="155"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <string key="text">In the first screen that appears at launch, you will see a list under "Categories", and if you have any stars selected, "Stars". Selecting an item under "Categories" will show you a list of Scripture Masteries under that selection.  Clicking the star here will cycle through all of the available stars, copying the scripture to one of the "Stars" sections on the main screen. Practice by clicking the star below:</string>
+                                                    <string key="text">In the first screen that appears at launch, you will see a list under "Categories", and if you have any stars selected, "Stars". Selecting an item under "Categories" will show you a list of items under that selection.  Clicking the star here will cycle through all of the available stars, copying the item to one of the "Stars" sections on the main screen. Practice by clicking the star below:</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
@@ -210,13 +210,13 @@
                             <tableViewSection headerTitle="" id="GgF-JD-1dV">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="slaveCell" id="wff-14-4hq" customClass="SlaveTableViewCell" customModule="AofF" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="778" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="775.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wff-14-4hq" id="Iuw-gP-0iR">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moses 1:39" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NjB-3W-fpO">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A of F 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NjB-3W-fpO">
                                                     <rect key="frame" x="19" y="6" width="240" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -233,7 +233,7 @@
                                                         <action selector="starButtonTapped:" destination="0Ge-DG-FbT" eventType="touchUpInside" id="V8J-HM-Ped"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work and glory" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjD-g7-fcZ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Atonement" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjD-g7-fcZ">
                                                     <rect key="frame" x="19" y="27" width="240" height="14"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <nil key="textColor"/>
@@ -262,7 +262,7 @@
                             <tableViewSection headerTitle="" id="PVq-U1-DkH">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="158" id="JoL-no-7MH">
-                                        <rect key="frame" x="0.0" y="858" width="375" height="158"/>
+                                        <rect key="frame" x="0.0" y="855.5" width="375" height="158"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="JoL-no-7MH" id="Szo-SB-mmK">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="157.5"/>
@@ -290,13 +290,13 @@
                             <tableViewSection headerTitle="" id="RLk-tc-lLV">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="slaveCell" id="c9o-Cw-YVE" customClass="SlaveTableViewCell" customModule="AofF" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="1052" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="1049.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c9o-Cw-YVE" id="edk-OI-6C2">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moses 1:39" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dB6-rV-0Wi">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paragraph 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dB6-rV-0Wi">
                                                     <rect key="frame" x="19" y="6" width="240" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -313,7 +313,7 @@
                                                         <action selector="secondStarButtonTapped:" destination="0Ge-DG-FbT" eventType="touchUpInside" id="iDd-kN-D4Y"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work and glory" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYU-H1-NnZ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plan of Salvation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYU-H1-NnZ">
                                                     <rect key="frame" x="19" y="27" width="240" height="14"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <nil key="textColor"/>
@@ -341,7 +341,7 @@
                             <tableViewSection headerTitle="" id="9RS-sP-XSz">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="133" id="VyH-Xn-IZm">
-                                        <rect key="frame" x="0.0" y="1132" width="375" height="133"/>
+                                        <rect key="frame" x="0.0" y="1129.5" width="375" height="133"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="VyH-Xn-IZm" id="t7b-N3-rbo">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="132.5"/>
@@ -366,6 +366,71 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="" id="Fsm-qP-gJ8">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="133" id="Kzq-lm-Vmo">
+                                        <rect key="frame" x="0.0" y="1298.5" width="375" height="133"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="Kzq-lm-Vmo" id="2bk-My-tpp">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="132"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNM-sS-Uo0">
+                                                    <rect key="frame" x="8" y="18" width="359" height="106.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <string key="text">When viewing a memorization view (Full Text, First Letters, Random Words, Sections), you can swipe left or right to move between items if there are multiple items available.  Because the text of an item is scrollable, I recommend performing the swipe just above the slider and below the navigation bar. </string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lNM-sS-Uo0" firstAttribute="top" secondItem="2bk-My-tpp" secondAttribute="topMargin" constant="10" id="QQ8-5b-BqY"/>
+                                                <constraint firstItem="lNM-sS-Uo0" firstAttribute="leading" secondItem="2bk-My-tpp" secondAttribute="leadingMargin" id="VYj-4u-6dR"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="lNM-sS-Uo0" secondAttribute="bottom" id="h7t-9e-Rm8"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="lNM-sS-Uo0" secondAttribute="trailing" id="lxH-Jf-R30"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Other Apps" id="Emz-8y-shT">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="71" id="oCG-hy-mpw">
+                                        <rect key="frame" x="0.0" y="1487.5" width="375" height="71"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oCG-hy-mpw" id="eoS-Tq-K7M">
+                                            <rect key="frame" x="0.0" y="0.0" width="328" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScriptureMastery" translatesAutoresizingMaskIntoConstraints="NO" id="3qV-3l-SDl">
+                                                    <rect key="frame" x="8" y="6" width="59" height="59"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="59" id="SAN-GF-Pek"/>
+                                                        <constraint firstAttribute="width" secondItem="3qV-3l-SDl" secondAttribute="height" multiplier="1:1" id="hlU-RA-Wmn"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scripture Mastery (Free)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="Y25-hb-vue">
+                                                    <rect key="frame" x="75" y="25" width="245" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Y25-hb-vue" secondAttribute="trailing" id="0hX-Bw-n7s"/>
+                                                <constraint firstItem="Y25-hb-vue" firstAttribute="leading" secondItem="3qV-3l-SDl" secondAttribute="trailing" constant="8" id="FNI-ZN-aSO"/>
+                                                <constraint firstItem="Y25-hb-vue" firstAttribute="centerY" secondItem="eoS-Tq-K7M" secondAttribute="centerY" id="S0z-gU-RiB"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="3qV-3l-SDl" secondAttribute="leading" id="fh7-C2-URv"/>
+                                                <constraint firstItem="3qV-3l-SDl" firstAttribute="centerY" secondItem="eoS-Tq-K7M" secondAttribute="centerY" id="idG-CD-nvi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="W14-dU-9c2" appends="YES" id="vQF-ZA-hkT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="0Ge-DG-FbT" id="OY2-JE-HOs"/>
@@ -377,11 +442,17 @@
                         <outlet property="fontStepper" destination="YAk-S1-8ZR" id="yS1-6d-3wo"/>
                         <outlet property="fontTextField" destination="rVw-c9-WD1" id="H39-8O-4qz"/>
                         <outlet property="fontWebView" destination="vRH-RG-YTw" id="uhz-u7-0JA"/>
+                        <outlet property="scriptureMasteryImage" destination="3qV-3l-SDl" id="eZU-Gg-ikY"/>
                         <outlet property="secondStarButton" destination="cct-vH-UyR" id="TbU-tG-dpa"/>
                         <outlet property="starButton" destination="qiu-qI-6ZR" id="F4P-qH-o3U"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0N3-yk-bRC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="W14-dU-9c2">
+                    <connections>
+                        <action selector="scriptureMasteryTapped:" destination="0Ge-DG-FbT" id="bze-iD-Vrw"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1325.5999999999999" y="-851.42428785607206"/>
         </scene>
@@ -425,11 +496,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="LDS Memory" id="jVM-dU-jLa">
                         <barButtonItem key="backBarButtonItem" title="Back" id="TgB-a1-681"/>
-                        <barButtonItem key="leftBarButtonItem" image="info" id="Mg3-83-sxu">
-                            <connections>
-                                <segue destination="0Ge-DG-FbT" kind="show" identifier="toHelpView" id="xSb-Yt-tzY"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                 </tableViewController>
@@ -664,7 +730,7 @@
         <scene sceneID="LvX-YF-0ud">
             <objects>
                 <navigationController toolbarHidden="NO" id="2Gr-Ag-a56" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="XCU-Oe-4yQ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XCU-Oe-4yQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.86365655637254901" green="0.61100430464794586" blue="0.60539956924384297" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1367,11 +1433,11 @@
         <image name="GreenStar" width="16" height="16"/>
         <image name="Random Words" width="16" height="16"/>
         <image name="Random Words Dull" width="16" height="16"/>
+        <image name="ScriptureMastery" width="256" height="256"/>
         <image name="Sections" width="16" height="16"/>
         <image name="Sections Dull" width="16" height="16"/>
         <image name="WhiteStar" width="16" height="16"/>
         <image name="YellowStar" width="16" height="16"/>
-        <image name="info" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ft4-Tw-IEg"/>

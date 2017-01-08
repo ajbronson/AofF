@@ -18,6 +18,10 @@ class MasterTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.volumes = FileController.shared.volumes()
+        let infoButton = UIButton(type: .infoLight)
+        infoButton.addTarget(self, action: #selector(showHelpVC), for: .touchUpInside)
+        let infoBarButtonItem = UIBarButtonItem(customView: infoButton)
+        navigationItem.leftBarButtonItem = infoBarButtonItem
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -27,6 +31,12 @@ class MasterTableViewController: UITableViewController {
         self.yellowStars = FileController.shared.yellowStars()
         tableView.reloadData()
         navigationController?.toolbar.isHidden = true
+    }
+    
+    func showHelpVC() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "helpVC")
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
