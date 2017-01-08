@@ -1,0 +1,6 @@
+framework module Pods_AofF {
+  umbrella header "Pods-AofF-umbrella.h"
+
+  export *
+  module * { export * }
+}
