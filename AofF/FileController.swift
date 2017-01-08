@@ -14,7 +14,7 @@ class FileController {
     //MARK: - Constants
     
     struct Constant {
-        static let fileName = "AFDBv2"
+        static let fileName = "AFDBv3"
         static let fileExtension = "sql"
         static let fontSize = "fontSize"
     }

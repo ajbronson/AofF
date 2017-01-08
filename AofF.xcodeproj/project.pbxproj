@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		213F6C2A1E21F7D0007A424A /* AFDBv3.sql in Resources */ = {isa = PBXBuildFile; fileRef = 213F6C291E21F7D0007A424A /* AFDBv3.sql */; };
 		21B70E771E0E5348004DC18E /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B70E761E0E5348004DC18E /* Volume.swift */; };
 		21B70E791E0E536E004DC18E /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B70E781E0E536E004DC18E /* Book.swift */; };
 		21B70E7B1E0E5440004DC18E /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B70E7A1E0E5440004DC18E /* MasterTableViewController.swift */; };
@@ -23,7 +24,6 @@
 		21B70E911E0E55ED004DC18E /* RandomWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B70E901E0E55ED004DC18E /* RandomWordViewController.swift */; };
 		21B70E931E0E55F4004DC18E /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B70E921E0E55F4004DC18E /* SectionViewController.swift */; };
 		21B70E951E0E55FC004DC18E /* HelpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B70E941E0E55FC004DC18E /* HelpTableViewController.swift */; };
-		21B70E971E0E5706004DC18E /* AFDBv2.sql in Resources */ = {isa = PBXBuildFile; fileRef = 21B70E961E0E5706004DC18E /* AFDBv2.sql */; };
 		21FB99A31E0E50D800510BB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FB99A21E0E50D800510BB6 /* AppDelegate.swift */; };
 		21FB99A81E0E50D800510BB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21FB99A61E0E50D800510BB6 /* Main.storyboard */; };
 		21FB99AA1E0E50D800510BB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21FB99A91E0E50D800510BB6 /* Assets.xcassets */; };
@@ -54,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		0371699B91E1FA69B2B21769 /* Pods-AofF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AofF.release.xcconfig"; path = "Pods/Target Support Files/Pods-AofF/Pods-AofF.release.xcconfig"; sourceTree = "<group>"; };
+		213F6C291E21F7D0007A424A /* AFDBv3.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = AFDBv3.sql; sourceTree = "<group>"; };
 		21B70E761E0E5348004DC18E /* Volume.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
 		21B70E781E0E536E004DC18E /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		21B70E7A1E0E5440004DC18E /* MasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +71,6 @@
 		21B70E901E0E55ED004DC18E /* RandomWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomWordViewController.swift; sourceTree = "<group>"; };
 		21B70E921E0E55F4004DC18E /* SectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
 		21B70E941E0E55FC004DC18E /* HelpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTableViewController.swift; sourceTree = "<group>"; };
-		21B70E961E0E5706004DC18E /* AFDBv2.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = AFDBv2.sql; sourceTree = "<group>"; };
 		21FB999F1E0E50D800510BB6 /* AofF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AofF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FB99A21E0E50D800510BB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21FB99A71E0E50D800510BB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -245,7 +245,7 @@
 		21FB99D71E0E51B700510BB6 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				21B70E961E0E5706004DC18E /* AFDBv2.sql */,
+				213F6C291E21F7D0007A424A /* AFDBv3.sql */,
 			);
 			name = Database;
 			sourceTree = "<group>";
@@ -381,8 +381,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				21FB99AD1E0E50D800510BB6 /* LaunchScreen.storyboard in Resources */,
-				21B70E971E0E5706004DC18E /* AFDBv2.sql in Resources */,
 				21FB99AA1E0E50D800510BB6 /* Assets.xcassets in Resources */,
+				213F6C2A1E21F7D0007A424A /* AFDBv3.sql in Resources */,
 				21FB99A81E0E50D800510BB6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -632,7 +632,7 @@
 				INFOPLIST_FILE = AofF/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.precisioncodes.AofF;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ldsmemory.articlesoffaith;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -649,7 +649,7 @@
 				INFOPLIST_FILE = AofF/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.precisioncodes.AofF;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ldsmemory.articlesoffaith;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
