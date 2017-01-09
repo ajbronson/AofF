@@ -36,7 +36,8 @@ class FullTextViewController: UIViewController, UIWebViewDelegate {
             self.book = book
             self.books = books
             self.tabBarController?.title = book.reference
-            wordWebView.loadHTMLString(book.text, baseURL: nil)
+            let bookText = book.text.replacingOccurrences(of: "\n", with: "<br>")
+            wordWebView.loadHTMLString(bookText, baseURL: nil)
         }
         
         speechSlider.maximumValue = 2.0
@@ -58,6 +59,7 @@ class FullTextViewController: UIViewController, UIWebViewDelegate {
         super.viewWillDisappear(animated)
         synthesizer.stopSpeaking(at: .immediate)
     }
+
     
     @IBAction func speechSliderValueChanged(_ sender: UISlider) {
         if speechSlider.value > 1.0 && speechSlider.value < 1.6 {
@@ -77,6 +79,7 @@ class FullTextViewController: UIViewController, UIWebViewDelegate {
             updateTextField(value: 0.1)
         }
         synthesizer.stopSpeaking(at: .immediate)
+        playButton.setTitle("Play", for: .normal)
     }
     
     
@@ -112,7 +115,8 @@ class FullTextViewController: UIViewController, UIWebViewDelegate {
     func bookDidChange() {
         if let book = book {
             self.tabBarController?.title = book.reference
-            wordWebView.loadHTMLString(book.text, baseURL: nil)
+            let bookText = book.text.replacingOccurrences(of: "\n", with: "<br>")
+            wordWebView.loadHTMLString(bookText, baseURL: nil)
         }
     }
     

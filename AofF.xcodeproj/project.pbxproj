@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		213F6C2A1E21F7D0007A424A /* AFDBv3.sql in Resources */ = {isa = PBXBuildFile; fileRef = 213F6C291E21F7D0007A424A /* AFDBv3.sql */; };
+		213F6C5C1E237AF7007A424A /* SlaveCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213F6C5B1E237AF7007A424A /* SlaveCollectionHeaderView.swift */; };
 		21B70E771E0E5348004DC18E /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B70E761E0E5348004DC18E /* Volume.swift */; };
 		21B70E791E0E536E004DC18E /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B70E781E0E536E004DC18E /* Book.swift */; };
 		21B70E7B1E0E5440004DC18E /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B70E7A1E0E5440004DC18E /* MasterTableViewController.swift */; };
@@ -55,6 +56,7 @@
 /* Begin PBXFileReference section */
 		0371699B91E1FA69B2B21769 /* Pods-AofF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AofF.release.xcconfig"; path = "Pods/Target Support Files/Pods-AofF/Pods-AofF.release.xcconfig"; sourceTree = "<group>"; };
 		213F6C291E21F7D0007A424A /* AFDBv3.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = AFDBv3.sql; sourceTree = "<group>"; };
+		213F6C5B1E237AF7007A424A /* SlaveCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlaveCollectionHeaderView.swift; sourceTree = "<group>"; };
 		21B70E761E0E5348004DC18E /* Volume.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
 		21B70E781E0E536E004DC18E /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		21B70E7A1E0E5440004DC18E /* MasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 				21B70E821E0E54FD004DC18E /* SlaveTableViewCellNoHint.swift */,
 				21B70E881E0E557E004DC18E /* SlaveCollectionViewCell.swift */,
 				21B70E8A1E0E55AB004DC18E /* LargeSlaveCollectionViewCell.swift */,
+				213F6C5B1E237AF7007A424A /* SlaveCollectionHeaderView.swift */,
 			);
 			name = CustomTableViewCell;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				21B70E7B1E0E5440004DC18E /* MasterTableViewController.swift in Sources */,
 				21B70E811E0E54BF004DC18E /* SlaveTableViewCell.swift in Sources */,
 				21FB99D91E0E51CF00510BB6 /* StringHelper.swift in Sources */,
+				213F6C5C1E237AF7007A424A /* SlaveCollectionHeaderView.swift in Sources */,
 				21FB99A31E0E50D800510BB6 /* AppDelegate.swift in Sources */,
 				21B70E8B1E0E55AB004DC18E /* LargeSlaveCollectionViewCell.swift in Sources */,
 				21B70E7F1E0E5479004DC18E /* File.swift in Sources */,

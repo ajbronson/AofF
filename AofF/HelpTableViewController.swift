@@ -18,6 +18,7 @@ class HelpTableViewController: UITableViewController, UIWebViewDelegate {
     @IBOutlet weak var fontTextField: UITextField!
     @IBOutlet weak var fontStepper: UIStepper!
     @IBOutlet weak var scriptureMasteryImage: UIImageView!
+    @IBOutlet weak var classicPoetryImage: UIImageView!
     
     //MARK: - Properties
     
@@ -28,13 +29,15 @@ class HelpTableViewController: UITableViewController, UIWebViewDelegate {
     
     override func viewDidLoad() {
         let value = UserDefaults.standard.integer(forKey: FileController.Constant.fontSize)
-        fontStepper.minimumValue = 50
-        fontStepper.maximumValue = 300
+        fontStepper.minimumValue = 80
+        fontStepper.maximumValue = 200
         fontStepper.stepValue = 10.0
         fontStepper.value = Double(value)
         fontTextField.text = "\(value)"
         scriptureMasteryImage.layer.cornerRadius = 10
         scriptureMasteryImage.clipsToBounds = true
+        classicPoetryImage.layer.cornerRadius = 10
+        classicPoetryImage.clipsToBounds = true
         updateWebView()
     }
     
@@ -94,5 +97,11 @@ class HelpTableViewController: UITableViewController, UIWebViewDelegate {
             UIApplication.shared.openURL(url)
         }
         
+    }
+    
+    @IBAction func poetryTapped(_ sender: UITapGestureRecognizer) {
+        if let url = URL(string: "https://itunes.apple.com/us/app/classic-poetry-memorization/id523470453?mt=8") {
+            UIApplication.shared.openURL(url)
+        }
     }
 }

@@ -31,7 +31,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Suggestions/Feedback? I would love to hear from you! Click the email below to send me a message." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnq-fO-WN6">
-                                                    <rect key="frame" x="8" y="8" width="359" height="55"/>
+                                                    <rect key="frame" x="8" y="8" width="359" height="54"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -54,7 +54,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgR-7c-xlH">
-                                                    <rect key="frame" x="35" y="17" width="305" height="30"/>
+                                                    <rect key="frame" x="35" y="16" width="305" height="30"/>
                                                     <state key="normal" title="ldsmemory.scripturemasteryapp@gmail.com"/>
                                                     <connections>
                                                         <action selector="emailButtonTapped:" destination="0Ge-DG-FbT" eventType="touchUpInside" id="mPM-KF-cRK"/>
@@ -80,7 +80,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="50" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rVw-c9-WD1">
-                                                    <rect key="frame" x="226" y="22" width="39" height="30"/>
+                                                    <rect key="frame" x="226" y="21" width="39" height="30"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -123,31 +123,31 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="jcb-nj-hwD">
-                                                    <rect key="frame" x="115" y="8" width="145" height="37"/>
+                                                    <rect key="frame" x="115" y="8" width="145" height="36"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteStar" translatesAutoresizingMaskIntoConstraints="NO" id="Q8H-t4-hhP">
-                                                            <rect key="frame" x="0.0" y="6" width="25" height="25"/>
+                                                            <rect key="frame" x="0.0" y="5.5" width="25" height="25"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="Q8H-t4-hhP" secondAttribute="height" multiplier="1:1" id="Ftk-bR-SxN"/>
                                                                 <constraint firstAttribute="width" constant="25" id="KbN-qu-7z8"/>
                                                             </constraints>
                                                         </imageView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenStar" translatesAutoresizingMaskIntoConstraints="NO" id="Klg-EW-88r">
-                                                            <rect key="frame" x="40" y="6" width="25" height="25"/>
+                                                            <rect key="frame" x="40" y="5.5" width="25" height="25"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="Klg-EW-88r" secondAttribute="height" multiplier="1:1" id="3fG-xe-Ywk"/>
                                                                 <constraint firstAttribute="width" constant="25" id="TpO-Mf-P3C"/>
                                                             </constraints>
                                                         </imageView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlueStar" translatesAutoresizingMaskIntoConstraints="NO" id="JtB-2J-MVb">
-                                                            <rect key="frame" x="80" y="6" width="25" height="25"/>
+                                                            <rect key="frame" x="80" y="5.5" width="25" height="25"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="25" id="ZXS-n7-jjG"/>
                                                                 <constraint firstAttribute="width" secondItem="JtB-2J-MVb" secondAttribute="height" multiplier="1:1" id="jNE-5q-Tkx"/>
                                                             </constraints>
                                                         </imageView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YellowStar" translatesAutoresizingMaskIntoConstraints="NO" id="G0h-AO-iGc">
-                                                            <rect key="frame" x="120" y="6" width="25" height="25"/>
+                                                            <rect key="frame" x="120" y="5.5" width="25" height="25"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="G0h-AO-iGc" secondAttribute="height" multiplier="1:1" id="aUt-xM-mg8"/>
                                                                 <constraint firstAttribute="width" constant="25" id="uRb-4u-K3P"/>
@@ -164,7 +164,7 @@
                                                     </constraints>
                                                 </stackView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bh6-3l-rKr">
-                                                    <rect key="frame" x="8" y="53" width="359" height="133"/>
+                                                    <rect key="frame" x="8" y="52" width="359" height="133"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <string key="text">Stars can be used for whatever you would like.  Tagging an item with a Blue Star could mean you want to review it weekly.  A yellow star could mean you don't have the item memorized, and want it to be in a "to do" list. The white star is the default, signaling no selection.  Use the stars for whatever helps you the most.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -190,7 +190,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZg-8X-qSF">
-                                                    <rect key="frame" x="8" y="8" width="359" height="155"/>
+                                                    <rect key="frame" x="8" y="8" width="359" height="154"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <string key="text">In the first screen that appears at launch, you will see a list under "Categories", and if you have any stars selected, "Stars". Selecting an item under "Categories" will show you a list of items under that selection.  Clicking the star here will cycle through all of the available stars, copying the item to one of the "Stars" sections on the main screen. Practice by clicking the star below:</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -269,7 +269,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBH-gV-gC3">
-                                                    <rect key="frame" x="8" y="18" width="359" height="132"/>
+                                                    <rect key="frame" x="8" y="18" width="359" height="131"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <string key="text">From the main screen, selecting an item under the "Stars" section will take you to a similar view. However, when the star is clicked here, it removes the selection completely, converting it to a white star as opposed to cycling through the available stars.  Practice below:
 </string>
@@ -348,7 +348,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Et-hw-kbr">
-                                                    <rect key="frame" x="8" y="18" width="359" height="107"/>
+                                                    <rect key="frame" x="8" y="18" width="359" height="106"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <string key="text">Clicking the stars in any of the memorization views (Full Text, First Letters, Random Words, Sections) will always cycle through the available stars, no matter if coming from the "Categories" or "Stars" views. 
 </string>
@@ -372,11 +372,11 @@
                                         <rect key="frame" x="0.0" y="1298.5" width="375" height="133"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="Kzq-lm-Vmo" id="2bk-My-tpp">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="132"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="132.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNM-sS-Uo0">
-                                                    <rect key="frame" x="8" y="18" width="359" height="106.5"/>
+                                                    <rect key="frame" x="8" y="18" width="359" height="106"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <string key="text">When viewing a memorization view (Full Text, First Letters, Random Words, Sections), you can swipe left or right to move between items if there are multiple items available.  Because the text of an item is scrollable, I recommend performing the swipe just above the slider and below the navigation bar. </string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -399,7 +399,7 @@
                                         <rect key="frame" x="0.0" y="1487.5" width="375" height="71"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oCG-hy-mpw" id="eoS-Tq-K7M">
-                                            <rect key="frame" x="0.0" y="0.0" width="328" height="70"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="328" height="70.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScriptureMastery" translatesAutoresizingMaskIntoConstraints="NO" id="3qV-3l-SDl">
@@ -429,6 +429,40 @@
                                             <outletCollection property="gestureRecognizers" destination="W14-dU-9c2" appends="YES" id="vQF-ZA-hkT"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="71" id="wTu-hZ-fHN">
+                                        <rect key="frame" x="0.0" y="1558.5" width="375" height="71"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wTu-hZ-fHN" id="tjR-ez-nTf">
+                                            <rect key="frame" x="0.0" y="0.0" width="328" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Poetry" translatesAutoresizingMaskIntoConstraints="NO" id="f4G-v1-jem">
+                                                    <rect key="frame" x="8" y="6" width="59" height="59"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="f4G-v1-jem" secondAttribute="height" multiplier="1:1" id="IpX-6A-zH1"/>
+                                                        <constraint firstAttribute="width" constant="59" id="oOl-UI-TS8"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classic Poetry ($0.99)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="yAk-ks-3LC">
+                                                    <rect key="frame" x="75" y="25" width="245" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="leadingMargin" secondItem="f4G-v1-jem" secondAttribute="leading" id="9XI-N3-gHy"/>
+                                                <constraint firstItem="yAk-ks-3LC" firstAttribute="centerY" secondItem="tjR-ez-nTf" secondAttribute="centerY" id="DlO-xg-143"/>
+                                                <constraint firstItem="f4G-v1-jem" firstAttribute="centerY" secondItem="tjR-ez-nTf" secondAttribute="centerY" id="Rhp-fM-lDx"/>
+                                                <constraint firstItem="yAk-ks-3LC" firstAttribute="leading" secondItem="f4G-v1-jem" secondAttribute="trailing" constant="8" id="cUB-FS-z11"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="yAk-ks-3LC" secondAttribute="trailing" id="gnf-64-1WQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="AAM-9l-Nxm" appends="YES" id="lne-6y-1gs"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -439,6 +473,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Help" id="BIH-O1-zKd"/>
                     <connections>
+                        <outlet property="classicPoetryImage" destination="f4G-v1-jem" id="XjS-9M-9ud"/>
                         <outlet property="fontStepper" destination="YAk-S1-8ZR" id="yS1-6d-3wo"/>
                         <outlet property="fontTextField" destination="rVw-c9-WD1" id="H39-8O-4qz"/>
                         <outlet property="fontWebView" destination="vRH-RG-YTw" id="uhz-u7-0JA"/>
@@ -451,6 +486,11 @@
                 <tapGestureRecognizer id="W14-dU-9c2">
                     <connections>
                         <action selector="scriptureMasteryTapped:" destination="0Ge-DG-FbT" id="bze-iD-Vrw"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="AAM-9l-Nxm">
+                    <connections>
+                        <action selector="poetryTapped:" destination="0Ge-DG-FbT" id="J6t-jF-6Lg"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -644,13 +684,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="O4w-rZ-sUE">
                             <size key="itemSize" width="180" height="118"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="JjJ-Pc-qcO" customClass="SlaveCollectionViewCell" customModule="AofF" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="180" height="118"/>
+                                <rect key="frame" x="0.0" y="50" width="180" height="118"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="180" height="118"/>
@@ -666,7 +706,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="4" translatesAutoresizingMaskIntoConstraints="NO" id="ncq-d0-Nab">
-                                                    <rect key="frame" x="8" y="61" width="148" height="11"/>
+                                                    <rect key="frame" x="8" y="61" width="148" height="33"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -680,6 +720,7 @@
                                                 <constraint firstItem="kGh-NG-2Rs" firstAttribute="leading" secondItem="bZe-jl-tNL" secondAttribute="leading" constant="10" id="VZT-rg-mPy"/>
                                                 <constraint firstItem="ncq-d0-Nab" firstAttribute="leading" secondItem="bZe-jl-tNL" secondAttribute="leadingMargin" id="WEB-pl-2gL"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="ncq-d0-Nab" secondAttribute="trailing" id="amI-hm-CQ8"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ncq-d0-Nab" secondAttribute="bottom" id="dTj-CB-K0n"/>
                                                 <constraint firstItem="ncq-d0-Nab" firstAttribute="top" secondItem="kGh-NG-2Rs" secondAttribute="bottom" constant="-0.5" id="lgG-3o-Fbq"/>
                                             </constraints>
                                         </view>
@@ -699,6 +740,26 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Header" id="0OS-EQ-0UK" customClass="SlaveCollectionHeaderView" customModule="AofF" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="axA-ll-3vD">
+                                    <rect key="frame" x="18" y="16.5" width="339" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailingMargin" secondItem="axA-ll-3vD" secondAttribute="trailing" constant="10" id="Fdn-RZ-o2X"/>
+                                <constraint firstItem="axA-ll-3vD" firstAttribute="centerY" secondItem="0OS-EQ-0UK" secondAttribute="centerY" id="UKj-W7-Oqf"/>
+                                <constraint firstItem="axA-ll-3vD" firstAttribute="leading" secondItem="0OS-EQ-0UK" secondAttribute="leadingMargin" constant="10" id="eWA-6S-rDD"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="headerTitle" destination="axA-ll-3vD" id="WM7-CG-ByL"/>
+                            </connections>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="dDM-sI-QDE" id="92f-Ad-s98"/>
                             <outlet property="delegate" destination="dDM-sI-QDE" id="deL-Gg-6fY"/>
@@ -1369,7 +1430,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzt-an-PGs">
                                 <rect key="frame" x="16" y="186" width="343" height="296"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbi-dJ-yCT">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="xbi-dJ-yCT">
                                         <rect key="frame" x="0.0" y="10" width="343" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -1431,6 +1492,7 @@
         <image name="Full Text Dull" width="16" height="16"/>
         <image name="FullText" width="16" height="16"/>
         <image name="GreenStar" width="16" height="16"/>
+        <image name="Poetry" width="16" height="16"/>
         <image name="Random Words" width="16" height="16"/>
         <image name="Random Words Dull" width="16" height="16"/>
         <image name="ScriptureMastery" width="256" height="256"/>
@@ -1440,6 +1502,6 @@
         <image name="YellowStar" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ft4-Tw-IEg"/>
+        <segue reference="cEf-UQ-2us"/>
     </inferredMetricsTieBreakers>
 </document>
