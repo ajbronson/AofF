@@ -25,6 +25,9 @@
 		21B70E911E0E55ED004DC18E /* RandomWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B70E901E0E55ED004DC18E /* RandomWordViewController.swift */; };
 		21B70E931E0E55F4004DC18E /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B70E921E0E55F4004DC18E /* SectionViewController.swift */; };
 		21B70E951E0E55FC004DC18E /* HelpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B70E941E0E55FC004DC18E /* HelpTableViewController.swift */; };
+		21F74C811E5152280089928B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F74C801E5152280089928B /* Security.framework */; };
+		21F74C831E5152310089928B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F74C821E5152310089928B /* SystemConfiguration.framework */; };
+		21F74C8E1E5154890089928B /* libFlurry_7.9.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F74C8D1E5154890089928B /* libFlurry_7.9.2.a */; };
 		21FB99A31E0E50D800510BB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FB99A21E0E50D800510BB6 /* AppDelegate.swift */; };
 		21FB99A81E0E50D800510BB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21FB99A61E0E50D800510BB6 /* Main.storyboard */; };
 		21FB99AA1E0E50D800510BB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21FB99A91E0E50D800510BB6 /* Assets.xcassets */; };
@@ -73,6 +76,12 @@
 		21B70E901E0E55ED004DC18E /* RandomWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomWordViewController.swift; sourceTree = "<group>"; };
 		21B70E921E0E55F4004DC18E /* SectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
 		21B70E941E0E55FC004DC18E /* HelpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTableViewController.swift; sourceTree = "<group>"; };
+		21F74C801E5152280089928B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		21F74C821E5152310089928B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		21F74C8A1E5152F10089928B /* Article-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Article-Bridging-Header.h"; sourceTree = "<group>"; };
+		21F74C8B1E5154890089928B /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		21F74C8C1E5154890089928B /* FlurrySessionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurrySessionBuilder.h; sourceTree = "<group>"; };
+		21F74C8D1E5154890089928B /* libFlurry_7.9.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_7.9.2.a; sourceTree = "<group>"; };
 		21FB999F1E0E50D800510BB6 /* AofF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AofF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FB99A21E0E50D800510BB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21FB99A71E0E50D800510BB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,6 +105,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21F74C8E1E5154890089928B /* libFlurry_7.9.2.a in Frameworks */,
+				21F74C831E5152310089928B /* SystemConfiguration.framework in Frameworks */,
+				21F74C811E5152280089928B /* Security.framework in Frameworks */,
 				7AFA695D05199C0FCF11D876 /* Pods_AofF.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,6 +129,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21F74C991E5166FB0089928B /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				21F74C8B1E5154890089928B /* Flurry.h */,
+				21F74C8C1E5154890089928B /* FlurrySessionBuilder.h */,
+				21F74C8D1E5154890089928B /* libFlurry_7.9.2.a */,
+				21F74C8A1E5152F10089928B /* Article-Bridging-Header.h */,
+			);
+			name = Flurry;
+			sourceTree = "<group>";
+		};
 		21FB99961E0E50D800510BB6 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +165,7 @@
 		21FB99A11E0E50D800510BB6 /* AofF */ = {
 			isa = PBXGroup;
 			children = (
+				21F74C991E5166FB0089928B /* Flurry */,
 				21FB99D71E0E51B700510BB6 /* Database */,
 				21FB99D01E0E515900510BB6 /* Helpers */,
 				21FB99D11E0E515F00510BB6 /* ModelController */,
@@ -256,6 +280,8 @@
 		C9051C2D9E890BE57FBF96A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				21F74C821E5152310089928B /* SystemConfiguration.framework */,
+				21F74C801E5152280089928B /* Security.framework */,
 				42B450E3E472A92186E81A69 /* Pods_AofF.framework */,
 			);
 			name = Frameworks;
@@ -636,8 +662,13 @@
 				INFOPLIST_FILE = AofF/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AofF",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ldsmemory.articlesoffaith;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AofF/Article-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -653,8 +684,13 @@
 				INFOPLIST_FILE = AofF/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AofF",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ldsmemory.articlesoffaith;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AofF/Article-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

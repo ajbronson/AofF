@@ -10,12 +10,18 @@ import UIKit
 
 class SlaveTableViewCellNoHint: UITableViewCell {
     
+    //MARK: - Outlet
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var starButton: UIButton!
+    
+    //MARK: - Properties
     
     var delegate: ChangeStar?
     var book: Book?
     var isInStarMode = false
+    
+    //MARK: - Helper Methods
     
     func updateWith(book: Book, isInStarMode: Bool) {
         self.titleLabel.text = book.reference
@@ -36,7 +42,15 @@ class SlaveTableViewCellNoHint: UITableViewCell {
         titleLabel.font = UIFont.systemFont(ofSize: CGFloat(textSize)/6.2)
     }
     
+    //MARK: - Actions
+    
     @IBAction func starButtonTapped(_ sender: UIButton) {
+        if let id = UIDevice.current.identifierForVendor?.uuidString {
+            Flurry.logEvent("Star Clicked", withParameters: ["Unique ID" : id])
+        } else {
+            Flurry.logEvent("Star Clicked", withParameters: ["Unique ID" : "Unknown"])
+        }
+        
         if let book = book {
             if isInStarMode {
                 FileController.shared.updateBookStar(book: book, hasYellowStar: 0, hasBlueStar: 0, hasGreenStar: 0)
@@ -61,6 +75,7 @@ class SlaveTableViewCellNoHint: UITableViewCell {
                 }
             }
         }
+        
         delegate?.shouldChangeStar(sender: self, starMode: isInStarMode)
     }
 }

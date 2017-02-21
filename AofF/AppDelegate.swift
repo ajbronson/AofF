@@ -13,11 +13,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        //Set Font Size
+        
         if UserDefaults.standard.value(forKey: FileController.Constant.fontSize) == nil {
             UserDefaults.standard.set(120, forKey: FileController.Constant.fontSize)
         }
+        
+        //Move Database To Documents
+        
         let fileManager = FileManager.default
         let documentsURL = try! FileManager().url(for: .documentDirectory,
                                                   in: .userDomainMask,
@@ -39,6 +44,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         }
         
+        //Convert old stars to new database
+        
         if let memorizedArray = UserDefaults.standard.array(forKey: "memorizedArray") {
             for i in 0..<memorizedArray.count {
                 if let item = memorizedArray[i] as? String {
@@ -54,9 +61,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     }
                 }
             }
+            
             UserDefaults.standard.removeObject(forKey: "memorizedArray")
             UserDefaults.standard.synchronize()
         }
+        
+        var count = UserDefaults.standard.integer(forKey: "launchCount")
+        count = count + 1
+        UserDefaults.standard.set(count, forKey: "launchCount")
+        
+        Flurry.startSession("78YN2M7XPYWKF47FSJFM")
+        Flurry.logEvent("Application Launch!")
+        if let id = UIDevice.current.identifierForVendor?.uuidString {
+            Flurry.logEvent("Application Launch", withParameters: ["Unique ID" : id])
+        } else {
+            Flurry.logEvent("Application Launch", withParameters: ["Unique ID" : "Unknown"])
+        }
+        
         return true
     }
 }
